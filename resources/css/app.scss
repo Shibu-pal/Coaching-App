@@ -1,0 +1,49 @@
+@import 'bootstrap/scss/bootstrap';
+
+// body {
+//     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+//         'Segoe UI Symbol', 'Noto Color Emoji';
+// }
+    /* ============ DESKTOP ONLY (Screens wider than 992px) ============ */
+@media all and (min-width: 992px) {
+
+    /* 1. MAIN PARENT: Open "Registration" on Hover */
+    .navbar .nav-item.dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Removing the gap so mouse doesn't lose focus */
+    }
+
+    /* 2. NESTED CHILD: Position relative for the sub-menu */
+    .dropdown-menu li { 
+        position: relative; 
+    }
+    
+    /* 3. NESTED CHILD: Position the submenu to the right */
+    .nav-item .submenu { 
+        display: none;
+        position: absolute;
+        left: 100%; 
+        top: -7px;
+    }
+    
+    .nav-item .submenu-left { 
+        right: 100%; 
+        left: auto; 
+    }
+    
+    /* 4. NESTED CHILD: Open "NEET" on Hover */
+    .dropdown-menu > li:hover > .submenu { 
+        display: block; 
+    }
+}
+
+/* ============ MOBILE & CLICK SUPPORT ============ */
+/* This ensures the JS can toggle the menu on click/mobile */
+.dropdown-menu .submenu.show {
+    display: block;
+}
+
+/* Carousel image height fix */
+// .carousel-item img {
+//     height: 400px; /* Set a fixed height for uniform display */
+// }

@@ -1,0 +1,6 @@
+[
+  {
+    "type": "sqlite",
+    "path": "d:\\Web Dev\\laravel project\\coaching-app\\database\\database.sqlite"
+  }
+]

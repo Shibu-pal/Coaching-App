@@ -1,0 +1,8 @@
+- [x] Update Notice model with fillable fields
+- [x] Add notice CRUD methods to AdminController
+- [x] Add notice routes to web.php
+- [x] Create admin-notice.blade.php for listing notices
+- [x] Create admin-notice-create.blade.php for creating notices
+- [x] Create admin-notice-edit.blade.php for editing notices
+- [x] Update welcome.blade.php to display notices dynamically
+- [x] Ensure file storage for PDFs
