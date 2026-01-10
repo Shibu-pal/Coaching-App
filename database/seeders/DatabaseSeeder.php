@@ -29,12 +29,6 @@ class DatabaseSeeder extends Seeder
             'email' => env('ADMIN_LOGIN_EMAIL'),
             'password' => Hash::make(env('ADMIN_LOGIN_PASSWORD')),
         ]);
-        Admin::create([
-            'name' => 'Home User',
-            'mobile' => '1111111111',
-            'email' => 'a@b.c',
-            'password' => 'a@b.c',
-        ]);
 
         Cource::create(
             ['cource_name' => 'xi_science']

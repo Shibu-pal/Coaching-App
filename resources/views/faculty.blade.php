@@ -1,6 +1,6 @@
 @extends('layout')
-@section('title', 'Join as Faculty | Teacher Registration - Crystal Career Institute')
-@section('meta_description','Passionate about teaching Science? Apply to join the expert faculty team at Crystal Career Institute, Dhulian.')
+@section('title', 'Expert Faculty & Educators | Crystal Career Institute, Dhulian')
+@section('meta_description','Meet the brilliant minds behind Crystal Career Institute. Our expert faculty team in Dhulian specializes in Physics, Chemistry, Biology, and Math for competitive success.')
 
 @section('content')
 <div class="row">

@@ -7,6 +7,13 @@
         <priority>1.0</priority>
     </url>
 
+    <url>
+        <loc>{{ url('/faculty') }}</loc>
+        <lastmod>{{ now()->toAtomString() }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
     @foreach($categories as $category)
     <url>
         <loc>{{ route('get_register', $category) }}</loc>
