@@ -1,59 +1,139 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Coaching App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A Laravel-based web application for managing a coaching institute, including student registration, teacher management, admin functionalities, and notice board.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Student Registration**: Comprehensive registration form with validation for personal details, academic info, and file uploads (signature and photo).
+- **Admit Card Generation**: Automatic generation and download of admit cards in PDF format after admin assigns roll numbers.
+- **Teacher Management**: Teacher registration, approval by admin, and dashboard access.
+- **Admin Dashboard**: Manage students (view, assign roll numbers), teachers (activate/deactivate), and notices (create, edit, delete).
+- **Notice Board**: Public display of notices with PDF attachments.
+- **Authentication**: Separate guards for students, teachers, and admins.
+- **Email Notifications**: Automated emails for registration completion and admit card issuance.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Backend:** Laravel 12 (PHP 8.2+)
+- **Frontend:** Blade Templates, Bootstrap 5, Sass
+- **Database:** MySQL
+- **PDF Generation:** DomPDF
+- **Email:** Laravel Mail
+- **Build Tool:** Vite
 
-## Learning Laravel
+## Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd coaching-app
+   ```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. **Install PHP dependencies:**
+   ```bash
+   composer install
+   ```
 
-## Laravel Sponsors
+3. **Install Node.js dependencies:**
+   ```bash
+   npm install
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+4. **Set up environment:**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+   Configure your database and mail settings in `.env`.
 
-### Premium Partners
+5. **Run migrations:**
+   ```bash
+   php artisan migrate --seed
+   ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+6. **Link storage for file uploads:**
+   ```bash
+   php artisan storage:link
+   ```
+
+7. **Build assets:**
+   ```bash
+   npm run build
+   ```
+
+## Usage
+
+- **Start the server:**
+  ```bash
+  php artisan serve
+  ```
+
+- **For development with hot reload:**
+  ```bash
+  npm run dev
+  ```
+
+The app will be available at `http://localhost:8000`.
+
+## Routes Overview
+
+### Public Routes
+- **Home:** `/` - Displays notices
+- **Student Login:** `/student/login` (GET/POST)
+- **Student Admit Card:** `/student/admit-card` (authenticated, GET)
+- **Student Admit Card Download:** `/student/admit-card/download` (authenticated, GET)
+- **Teacher Login:** `/teacher/login` (GET/POST)
+- **Teacher Register:** `/teacher/register` (GET/POST)
+- **Admin Login:** `/admin/login` (GET/POST)
+- **Registration:** `/register/{course}` (GET/POST, e.g., `/register/xi_science`)
+- **Faculty:** `/faculty` - Faculty page
+- **Sitemap:** `/sitemap.xml` - XML sitemap
+
+### Admin Routes (Authenticated)
+- **Admin Dashboard:** `/admin/dashboard`
+- **Manage Students:** `/admin/student`
+- **View Student:** `/admin/student/view/{id}`
+- **Update Roll Number:** `admin/update-roll-no` (POST)
+- **Manage Teachers:** `/admin/teacher`
+- **Toggle Teacher Status:** `/teacher/toggle-status/{id}` (GET)
+- **Manage Notices:** `/admin/notice`
+- **Create Notice:** `/admin/notice/create` (GET), `/admin/notice/store` (POST)
+- **Edit Notice:** `/admin/notice/edit/{id}` (GET), `/admin/notice/update/{id}` (PUT)
+- **Delete Notice:** `/admin/notice/delete/{id}` (DELETE)
+- **Admin Logout:** `/admin/logout` (POST)
+
+### Teacher Routes (Authenticated)
+- **Teacher Dashboard:** `/teacher/dashboard`
+- **Teacher Logout:** `/teacher/logout` (POST)
+
+## Models
+
+- **User** (Student): Handles student data and relationships.
+- **Teacher**: Manages teacher accounts.
+- **Admin**: Admin authentication.
+- **Department**: Teacher departments.
+- **Cource**: Available courses.
+- **Notice**: Announcements with optional PDF.
+
+## Database Migrations
+
+Key tables:
+- `users` (students)
+- `teachers`
+- `admins`
+- `departments`
+- `cources`
+- `notices`
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a Pull Request.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License.
+
