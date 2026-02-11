@@ -23,6 +23,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/register/{register}', 'getRegister')->name('get_register');
     Route::post('/register/{register}', 'postRegister')->name('post_register');
     Route::view('/faculty','faculty')->name('faculty');
+    Route::view('/gallery','gallery')->name('gallery');
 });
 
 Route::controller(AdminController::class)->group(function () {

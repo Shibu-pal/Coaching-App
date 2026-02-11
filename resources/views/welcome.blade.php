@@ -101,39 +101,30 @@ At Crystal Career Institute, every lesson is crafted with care, every student is
         </div>
     </section>
 
+    <div class="row pt-3">
+        <div class="col-md-4">
+            <img src="{{ asset('images/outside-1.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height">
+        </div>
+        <div class="col-md">
+            <img src="{{ asset('images/outside-2.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height">
+        </div>
+        <div class="col-md">
+            <img src="{{ asset('images/outside-3.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height">
+        </div>
+    </div>
+
     <div class="row mt-5 align-items-center">
-        <div class="col-lg-7">
-            <h5 class="fw-bold" style="color: #c3754e">CRYSTAL NEET Test Series 2026: Topic wise syllabus and schedule</h5>
+        <div class="col">
+            <h5 class="fw-bold" style="color: #c3754e">CRYSTAL NEET Test Series 2026: Full syllabus(English and Bengali both version)</h5>
             <p style="color: #c3754e">Target: NEET(UG) 2026 (Class XII / XII Pass / Repeater Students)</p>
-            
-            <div class="alert alert-success d-flex align-items-center" role="alert">
-                <div>
-                    <strong>Launching from 4th January 2026!</strong> NTA-Level Simulation & 18 High-Quality Tests.
-                </div>
-            </div>
 
             <ul class="list-unstyled">
-                <li><i class="bi bi-check-circle-fill text-success"></i> <strong>18 Tests:</strong> Part Syllabus & Full Syllabus.</li>
                 <li><i class="bi bi-check-circle-fill text-success"></i> <strong>Expert Analysis:</strong> Detailed discussions and strategies.</li>
                 <li><i class="bi bi-check-circle-fill text-success"></i> <strong>Smart Tools:</strong> Question-level insights and bookmarks.</li>
             </ul>
         </div>
         
-        <div class="col-lg-5">
-            <div class="card border-success shadow-sm">
-                <div class="card-header bg-success text-white text-center fw-bold">SPECIAL OFFER</div>
-                <div class="card-body text-center p-4">
-                    <h5 class="card-title text-muted">Registration at only ₹99/-</h5>
-                    <p class="card-text mb-1">First 2 tests FREE for quality comparison.</p>
-                    <div class="py-3">
-                        <span class="text-decoration-line-through text-danger fs-4">₹6999/-</span>
-                        <span class="display-6 fw-bold text-success mx-2">₹999/-</span>
-                    </div>
-                    <p class="small text-muted font-monospace">Only for First 100 Students</p>
-                    {{-- <a href="{{ route('get_register','test_series') }}" class="btn btn-success btn-lg w-100">Register Now</a> --}}
-                </div>
-            </div>
-        </div>
+        
     </div>
     <hr class="my-5">
     <!-- Notice Board Section -->
