@@ -78,7 +78,7 @@
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="{{ route('home') }}" class="nav-link px-2 text-body-secondary">Home</a></li>
                 <li class="nav-item"><a href="{{ route('teacher.login') }}" class="nav-link px-2 text-body-secondary">Teacher's Login</a></li>
-                <li class="nav-item"><a href="{{ route('faculty') }}" class="nav-link px-2 text-body-secondary">Facultu</a></li>
+                <li class="nav-item"><a href="{{ route('faculty') }}" class="nav-link px-2 text-body-secondary">Faculty</a></li>
                 <li class="nav-item"><a href="{{ route('gallery') }}" class="nav-link px-2 text-body-secondary">Gallery</a></li>
             </ul>
             <p class="text-center text-body-info">© 2026 All Rights Reserved Crystal Career Institute, W.B.</p>

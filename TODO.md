@@ -1,0 +1,1 @@
+- [x] Rewrite index.html using Bootstrap classes for Editorial Magazine style: add Bootstrap CDN, use container/row/col for layout, typography classes, minimal custom CSS for serif fonts and colors.

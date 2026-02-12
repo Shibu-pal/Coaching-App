@@ -27,14 +27,17 @@
         </div>
     </div>
     <div class="row pt-3">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <img src="{{ asset('images/bed-1.jpeg') }}" alt="Bedroom Image" class="d-block w-100 home-image-height">
         </div>
-        <div class="col-md">
+        <div class="col-md-3">
             <img src="{{ asset('images/bed-2.jpeg') }}" alt="Bedroom Image" class="d-block w-100 home-image-height">
         </div>
-        <div class="col-md">
+        <div class="col-md-3">
             <img src="{{ asset('images/bed-3.jpeg') }}" alt="Bedroom Image" class="d-block w-100 home-image-height">
+        </div>
+        <div class="col-md-3">
+            <img src="{{ asset('images/bed-4.jpeg') }}" alt="Bedroom Image" class="d-block w-100 home-image-height">
         </div>
     </div>
     <div class="row pt-5">
@@ -63,7 +66,26 @@
     </div>
     <div class="row pt-3">
         <div class="col-md-4">
-            <img src="{{ asset('images/classroom.jpeg') }}" alt="Classroom Image" class="d-block w-100 home-image-height">
+            <img src="{{ asset('images/classroom-1.jpeg') }}" alt="Classroom Image" class="d-block w-100 home-image-height">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ asset('images/classroom-2.jpeg') }}" alt="Classroom Image" class="d-block w-100 home-image-height">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ asset('images/classroom-3.jpeg') }}" alt="Classroom Image" class="d-block w-100 home-image-height">
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-12">
+            <h2 class="mb-4">Library</h2>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <div class="col-md-4">
+            <img src="{{ asset('images/library-1.jpeg') }}" alt="Classroom Image" class="d-block w-100 home-image-height">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ asset('images/library-2.jpeg') }}" alt="Classroom Image" class="d-block w-100 home-image-height">
         </div>
     </div>
     <div class="row pt-5">
@@ -71,12 +93,25 @@
             <h2 class="mb-4">Balcony</h2>
         </div>
     </div>
-    <div class="row pt-3 pb-5">
+    <div class="row pt-3">
         <div class="col-md-4">
             <img src="{{ asset('images/balcony-1.jpeg') }}" alt="Balcony Image" class="d-block w-100 home-image-height">
         </div>
         <div class="col-md-4">
             <img src="{{ asset('images/balcony-2.jpeg') }}" alt="Balcony Image" class="d-block w-100 home-image-height">
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-12">
+            <h2 class="mb-4">Washroom</h2>
+        </div>
+    </div>
+    <div class="row pt-3 pb-5">
+        <div class="col-md-4">
+            <img src="{{ asset('images/wash-1.jpeg') }}" alt="Classroom Image" class="d-block w-100 home-image-height">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ asset('images/wash-2.jpeg') }}" alt="Classroom Image" class="d-block w-100 home-image-height">
         </div>
     </div>
 @endsection

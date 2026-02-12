@@ -33,7 +33,7 @@
                         <span class="text-danger fw-bold small">TEST SERIES & CRASH COURSE</span>
                     </div>
                     <h3 class="text-danger fw-bold">NEET-2026</h3>
-                    <a class="nav-link text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">Online Application
+                    <a class="nav-link text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"><b>Online Application</b>
                         <img src="{{ asset('images/newgificon.gif') }}" alt="alternatetext" style="width: 15%;">
                     </a>
                         <ul class="dropdown-menu">
@@ -86,6 +86,49 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <section class="row justify-content-center pt-5">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <section class="mb-4">
+              <h2 class="section-title">Crystal Talent Search Examination 2026
+                <span class="badge rounded-pill bg-danger">
+                    Hurry up!
+                </span>
+              </h2>
+              <div class="dates-grid">
+                <div><strong>Exam Date:</strong> 1st March 2026</div>
+                <div><strong>Result Declaration:</strong> 3rd March 2026</div>
+                <div><strong>Interview Starts:</strong> 5th March 2026</div>
+                <div><strong>Session Starts:</strong> 30th March 2026</div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <section class="mb-4">
+              <h2 class="section-title bg-info"><b>Awards & Scholarships</b></h2>
+              <div class="list-group">
+                <div class="list-group-item award-item"><strong class="text-warning">1st Rank:</strong> ₹10,000 (₹7,000 Cash + ₹3,000 Gift)</div>
+                <div class="list-group-item award-item"><strong class="text-warning">2nd Rank:</strong> ₹7,500 (₹5,000 Cash + ₹2,500 Gift)</div>
+                <div class="list-group-item award-item"><strong class="text-warning">3rd Rank:</strong> ₹6,000 (₹3,500 Cash + ₹2,500 Gift)</div>
+                <div class="list-group-item award-item"><strong class="text-warning">4th-10th Rank:</strong> ₹1,000 each</div>
+              </div>
+            </section>
+          </div>
+          <div class="col-6">
+            <section class="mb-4">
+              <h2 class="section-title">Venue</h2>
+              <ul class="venue-list">
+                <li>Crystal Career Institute Campus, Dhulian</li>
+                <li>Additional centers: Aurangabad, Jangipur, Farakka, Kaliachak (as per Admit Card)</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="py-5 text-center bg-dark text-white rounded mt-4">
         <div class="container px-4">
             <h1 class="display-5 fw-bold text-success">CRYSTAL CAREER INSTITUTE</h1>
