@@ -109,7 +109,7 @@
         <div class="row">
           <div class="col-md-6">
             <section class="mb-4">
-              <h2 class="section-title bg-info"><b>Awards & Scholarships</b></h2>
+              <h2 class="section-title bg-info ps-1"><b>Awards & Scholarships</b></h2>
               <div class="list-group">
                 <div class="list-group-item award-item"><strong class="text-warning">1st Rank:</strong> ₹10,000 (₹7,000 Cash + ₹3,000 Gift)</div>
                 <div class="list-group-item award-item"><strong class="text-warning">2nd Rank:</strong> ₹7,500 (₹5,000 Cash + ₹2,500 Gift)</div>
@@ -124,7 +124,7 @@
               <ul class="venue-list">
                 <li>Crystal Career Institute Campus, Dhulian</li>
                 <li>Additional centers: Aurangabad, Jangipur, Farakka, Kaliachak (as per Admit Card)</li>
-                <li class="bg-success text-light">N.B: Awards & Scolarship only for class XI-Science students.</li>
+                <li class="bg-success text-light ps-1">N.B: Awards & Scolarship only for class XI-Science students.</li>
               </ul>
             </section>
           </div>
