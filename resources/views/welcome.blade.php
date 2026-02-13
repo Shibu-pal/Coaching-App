@@ -107,7 +107,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6">
             <section class="mb-4">
               <h2 class="section-title bg-info"><b>Awards & Scholarships</b></h2>
               <div class="list-group">
@@ -118,7 +118,7 @@
               </div>
             </section>
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <section class="mb-4">
               <h2 class="section-title">Venue</h2>
               <ul class="venue-list">
