@@ -124,7 +124,7 @@
               <ul class="venue-list">
                 <li>Crystal Career Institute Campus, Dhulian</li>
                 <li>Additional centers: Aurangabad, Jangipur, Farakka, Kaliachak (as per Admit Card)</li>
-                <li class="bg-success">N.B: Awards & Scolarship only for class XI-Science students.</li>
+                <li class="bg-success text-light">N.B: Awards & Scolarship only for class XI-Science students.</li>
               </ul>
             </section>
           </div>
@@ -148,13 +148,13 @@ At Crystal Career Institute, every lesson is crafted with care, every student is
 
     <div class="row pt-3">
         <div class="col-md-4 col-sm-6 pb-2">
-            <img src="{{ asset('images/outside-1.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height">
+            <img src="{{ asset('images/outside-1.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
         </div>
         <div class="col-md-4 col-sm-6 pb-2">
-            <img src="{{ asset('images/outside-2.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height">
+            <img src="{{ asset('images/outside-2.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
         </div>
         <div class="col-md-4 col-sm-6 pb-2">
-            <img src="{{ asset('images/outside-3.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height">
+            <img src="{{ asset('images/outside-3.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
         </div>
     </div>
 

@@ -13,27 +13,27 @@
 <div class="row">
     <div class="col-md-6 col-lg-4 mb-4">
         <div class="card">
-            <img src="{{ asset('images/Poster-4.jpg') }}" class="card-img-top" alt="Faculty Member 1">
+            <img src="{{ asset('images/Poster-4.jpg') }}" class="card-img-top" alt="Faculty Member 1" loading="lazy">
         </div>
     </div>
     <div class="col-md-6 col-lg-4 mb-4">
         <div class="card">
-            <img src="{{ asset('images/Poster-5.jpg') }}" class="card-img-top" alt="Faculty Member 2">
+            <img src="{{ asset('images/Poster-5.jpg') }}" class="card-img-top" alt="Faculty Member 2" loading="lazy">
         </div>
     </div>
     <div class="col-md-6 col-lg-4 mb-4">
         <div class="card">
-            <img src="{{ asset('images/Poster-6.jpg') }}" class="card-img-top" alt="Faculty Member 3">
+            <img src="{{ asset('images/Poster-6.jpg') }}" class="card-img-top" alt="Faculty Member 3" loading="lazy">
         </div>
     </div>
     <div class="col-md-6 col-lg-4 mb-4">
         <div class="card">
-            <img src="{{ asset('images/Poster-7.jpg') }}" class="card-img-top" alt="Faculty Member 3">
+            <img src="{{ asset('images/Poster-7.jpg') }}" class="card-img-top" alt="Faculty Member 4" loading="lazy">
         </div>
     </div>
     <div class="col-md-6 col-lg-4 mb-4">
         <div class="card">
-            <img src="{{ asset('images/Poster-8.jpg') }}" class="card-img-top" alt="Faculty Member 3">
+            <img src="{{ asset('images/Poster-8.jpg') }}" class="card-img-top" alt="Faculty Member 5" loading="lazy">
         </div>
     </div>
 </div>
