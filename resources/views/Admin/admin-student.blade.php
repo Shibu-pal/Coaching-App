@@ -29,6 +29,8 @@
                 <th scope="col">Mobile No</th>
                 <th scope="col">Email Id</th>
                 <th scope="col">Applied For</th>
+                <th scope="col">Present Institute</th>
+                <th scope="col">Address</th>
                 <th scope="col">Roll No</th>
                 <th scope="col">Action</th>
             </tr>
@@ -52,6 +54,8 @@
                     <td>{{ $user->contact }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->cources->cource_name }}</td>
+                    <td>{{ $user->Institute }}</td>
+                    <td><b>Post:</b> {{$user->post}}. <br><b>PS:</b> {{$user->ps}}. <br><b>District:</b> {{$user->district }}</td>
                     <td>@if ($user->roll_no != null)
                         {{ $user->roll_no }}
                     @else

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('header') | Crystal Career Institute</title>
     <meta name="robots" content="noindex, nofollow">
-    <meta http-equiv="X-Frame-Options" content="deny">
     @vite(['resources/css/app.scss', 'resources/js/app.js'])
   </head>
   <body>

@@ -33,7 +33,7 @@
                         <span class="text-danger fw-bold small">TEST SERIES & CRASH COURSE</span>
                     </div>
                     <h3 class="text-danger fw-bold">NEET-2026</h3>
-                    <a class="nav-link text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"><b>Online Application</b>
+                    <a class="nav-link text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"><b>Online Application Now</b>
                         <img src="{{ asset('images/newgificon.gif') }}" alt="alternatetext" style="width: 15%;">
                     </a>
                         <ul class="dropdown-menu">
@@ -95,6 +95,7 @@
                 <span class="badge rounded-pill bg-danger">
                     Hurry up!
                 </span>
+                <span class="text-success">Limited seat for class XI Science</span>
               </h2>
               <div class="dates-grid">
                 <div><strong>Exam Date:</strong> 1st March 2026</div>
@@ -123,6 +124,7 @@
               <ul class="venue-list">
                 <li>Crystal Career Institute Campus, Dhulian</li>
                 <li>Additional centers: Aurangabad, Jangipur, Farakka, Kaliachak (as per Admit Card)</li>
+                <li class="bg-success">N.B: Awards & Scolarship only for class XI-Science students.</li>
               </ul>
             </section>
           </div>
