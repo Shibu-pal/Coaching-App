@@ -5,6 +5,10 @@
 @section('meta_description', 'Crystal Career Institute in Dhulian, Murshidabad offers expert coaching for NEET, JEE, and Board exams (XI-XII Science). Build your career with expert guidance.')
 {{-- @section('robots', 'noindex, nofollow') --}}
 @section('content')
+    @if (isset($status))<div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ $status }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+    </div>@endif
     <div class="bg-white border-top shadow-sm">
         <div class="container pb-3">
             <div class="row align-items-center text-center text-md-start">

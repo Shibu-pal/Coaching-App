@@ -33,7 +33,7 @@ class HomeController extends Controller
         // Validate the input data
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email',
+            'email' => 'required|email|unique:users,email',
             'contact' => 'required|numeric|digits:10',
             'father_name' => 'required|string|max:255',
             'mother_name' => 'required|string|max:255',
@@ -56,8 +56,8 @@ class HomeController extends Controller
             'Institute' => 'required|string|max:255',
             'exam' => 'required|string|max:255',
             'grade' => 'required|string|max:10',
-            'signature' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'student_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'signature' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'student_image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         $cource = Cource::where('cource_name', $register)->first();
@@ -112,7 +112,7 @@ class HomeController extends Controller
         Mail::to($validatedData['email'])->send(new RegisterCompleted($data));
 
         // Redirect back with success message
-        return redirect()->route('home')->with('status', 'Registration successful!');
+        return redirect()->route('home')->with('status', 'Hi, ' . $validatedData['name'] . '! Registration completed successfully!');
     }
 
     public function admin(){
