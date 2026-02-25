@@ -151,14 +151,29 @@ At Crystal Career Institute, every lesson is crafted with care, every student is
     </section>
 
     <div class="row pt-3">
-        <div class="col-md-4 col-sm-6 pb-2">
+        <div class="col-md-3 col-sm-6 pb-2">
             <img src="{{ asset('images/outside-1.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
         </div>
-        <div class="col-md-4 col-sm-6 pb-2">
+        <div class="col-md-3 col-sm-6 pb-2">
             <img src="{{ asset('images/outside-2.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
         </div>
-        <div class="col-md-4 col-sm-6 pb-2">
+        <div class="col-md-3 col-sm-6 pb-2">
             <img src="{{ asset('images/outside-3.jpeg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
+        </div>
+        <div class="col-md-3 col-sm-6 pb-2">
+            <img src="{{ asset('images/ing-1.jpg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
+        </div>
+        <div class="col-md-3 col-sm-6 pb-2">
+            <img src="{{ asset('images/ing-2.jpg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
+        </div>
+        <div class="col-md-3 col-sm-6 pb-2">
+            <img src="{{ asset('images/ing-3.jpg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
+        </div>
+        <div class="col-md-3 col-sm-6 pb-2">
+            <img src="{{ asset('images/ing-4.jpg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
+        </div>
+        <div class="col-md-3 col-sm-6 pb-2">
+            <img src="{{ asset('images/ing-5.jpg') }}" alt="Institute Image" class="d-block w-100 home-image-height" loading="lazy">
         </div>
     </div>
 
