@@ -27,7 +27,8 @@ class AdminController extends Controller
         // 1. Validate
         $request->validate([
             'user_id' => 'required|exists:users,id',
-            'roll_no' => 'required|unique:users,roll_no' // Ensure roll no is unique
+            'roll_no' => 'required|unique:users,roll_no',
+            'exam_city' => 'required'
         ]);
 
         // 2. Find Student
@@ -35,6 +36,7 @@ class AdminController extends Controller
 
         // 3. Update
         $student->roll_no = $request->roll_no;
+        $student->exam_city = $request->exam_city;
         $student->save();
 
         Mail::to($student->email)->send(new SendAdmitCard($student));

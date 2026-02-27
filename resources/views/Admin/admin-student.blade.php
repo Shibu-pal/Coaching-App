@@ -89,6 +89,10 @@
                             <label for="roll_no" class="form-label">Enter Roll No:</label>
                             <input type="text" class="form-control" name="roll_no" required>
                         </div>
+                        <div class="mb-3">
+                            <label for="roll_no" class="form-label">Enter Exam City:</label>
+                            <textarea name="exam_city" id="" class="form-control" cols="30" rows="5" required></textarea>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -42,6 +42,17 @@
                     </div>
                     <hr class="my-1">
                     <div class="row mb-2">
+                        <div class="col-sm-4 text-muted">Exam City</div>
+                        <div class="col-sm-8">
+                            @if($student->exam_city)
+                                <span>{{ $student->exam_city }}</span>
+                            @else
+                                <span class="badge bg-warning text-dark">Not Assigned</span>
+                            @endif
+                        </div>
+                    </div>
+                    <hr class="my-1">
+                    <div class="row mb-2">
                         <div class="col-sm-4 text-muted">Applied For</div>
                         <div class="col-sm-8">{{ $student->cources->cource_name ?? 'N/A' }}</div>
                     </div>
@@ -87,6 +98,10 @@
                         <div class="mb-3">
                             <label for="roll_no" class="form-label">Enter Roll No:</label>
                             <input type="text" class="form-control" name="roll_no" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="roll_no" class="form-label">Enter Exam City:</label>
+                            <textarea name="exam_city" id="" class="form-control" cols="30" rows="10" required></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">

@@ -53,11 +53,11 @@
                 </tr>
                 <tr>
                     <td>Exam Date:</td>
-                    <td>[Day, Date, Month, 2025]</td>
+                    <td>01/03/2026</td>
                 </tr>
                 <tr>
                     <td>Exam City:</td>
-                    <td>[City Name]</td>
+                    <td>{{ $student['exam_city'] }}</td>
                 </tr>
             </table>
 

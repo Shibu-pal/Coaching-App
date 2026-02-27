@@ -70,6 +70,7 @@ class HomeController extends Controller
         $studentImagePath = $request->file('student_image')->store('student_images', 'public');
 
         $plainPassword = Carbon::parse($request->DOB)->format('dmY');
+        // dd($plainPassword);
 
         // Create the student record
         User::create([
@@ -245,7 +246,8 @@ class HomeController extends Controller
             'session' => '2026-27',
             'course' => $cource->cource_name, // Example selection
             'photo' => $user->student_image ? storage_path('app/public/' . $user->student_image) : null,
-            'phone' => '9242269090'
+            'phone' => '9242269090',
+            'exam_city' => $user->exam_city,
         ];
         // return $data;
         // Load the PDF view with data
